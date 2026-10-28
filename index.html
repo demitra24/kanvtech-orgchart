@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KanvTech Organization Chart — interactive employee hierarchy with search, filters and printable profiles.">
+  <meta name="theme-color" content="#175C4A">
+  <title>KanvTech · Organization Chart</title>
+  <link rel="canonical" href="https://kanvtechorgchart.netlify.app/">
+  <!-- Open Graph: proper preview card when the link is shared on WhatsApp / chat apps -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="KanvTech">
+  <meta property="og:title" content="KanvTech · Organization Chart">
+  <meta property="og:description" content="Search any employee, explore the full reporting hierarchy, view and print profiles.">
+  <meta property="og:url" content="https://kanvtechorgchart.netlify.app/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23175C4A'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' fill='white' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="app">
+    <!-- ============ TOP NAVIGATION ============ -->
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#" id="brandHome" aria-label="KanvTech home">
+          <span class="brand-mark" aria-hidden="true">K</span>
+          <span class="brand-text">
+            <strong>KanvTech</strong>
+            <small>Organization Directory</small>
+          </span>
+        </a>
+
+        <nav class="mainnav" id="mainNav" aria-label="Primary">
+          <button class="nav-link is-active" data-view="tree" type="button">Org Chart</button>
+          <button class="nav-link" data-view="directory" type="button">Directory</button>
+          <button class="nav-link" id="manageBtn" type="button">Manage Data</button>
+          <button class="nav-link" id="aboutBtn" type="button">About</button>
+        </nav>
+
+        <div class="topbar-actions">
+          <div class="searchbox">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+            <input id="globalSearch" type="search" placeholder="Search name or code…" aria-label="Search employees by name or code" autocomplete="off">
+            <span class="search-count" id="searchCount" hidden></span>
+            <div class="search-results" id="searchResults" aria-label="Search results" hidden></div>
+          </div>
+
+          <div class="printmenu">
+            <button class="btn btn-primary" id="printMenuBtn" type="button" aria-haspopup="true" aria-expanded="false">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="7"/></svg>
+              Print
+              <svg class="ico caret" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="printmenu-pop" id="printMenuPop" hidden>
+              <button type="button" data-print="profile">Employee profile…</button>
+              <button type="button" data-print="chart">Organization chart — all employees (1 page)</button>
+              <button type="button" data-print="directory">Employee directory</button>
+            </div>
+          </div>
+
+          <button class="burger" id="burgerBtn" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- mobile dropdown -->
+      <div class="mobile-menu" id="mobileMenu" hidden>
+        <button class="nav-link is-active" data-view="tree" type="button">Org Chart</button>
+        <button class="nav-link" data-view="directory" type="button">Directory</button>
+        <button class="nav-link" id="manageBtnMobile" type="button">Manage Data</button>
+        <button class="nav-link" id="aboutBtnMobile" type="button">About</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============ STATS STRIP ============ -->
+      <section class="stats" aria-label="Organization statistics" id="statsStrip">
+        <!-- filled by app.js -->
+      </section>
+
+      <!-- ============ TOOLBAR ============ -->
+      <section class="toolbar" aria-label="Filters and tools">
+        <label class="field">
+          <span>Branch</span>
+          <select id="branchFilter"><option value="">All branches</option></select>
+        </label>
+
+        <label class="field">
+          <span>Level</span>
+          <select id="levelFilter">
+            <option value="">All levels</option>
+            <option value="1">Level 1</option>
+            <option value="2">Level 2</option>
+            <option value="3">Level 3</option>
+            <option value="4">Level 4</option>
+            <option value="5">Level 5</option>
+          </select>
+        </label>
+
+        <div class="tool-group tree-only">
+          <button class="btn btn-ghost" id="expandAllBtn" type="button">Expand all</button>
+          <button class="btn btn-ghost" id="collapseAllBtn" type="button">Collapse</button>
+        </div>
+
+        <div class="tool-group zoomer tree-only" role="group" aria-label="Zoom">
+          <button id="zoomOutBtn" type="button" aria-label="Zoom out">−</button>
+          <span id="zoomLevel" aria-live="polite">100%</span>
+          <button id="zoomInBtn" type="button" aria-label="Zoom in">+</button>
+        </div>
+
+        <span class="toolbar-note" id="showingNote">125 of 125 employees</span>
+        <button class="btn btn-ghost clear-filters" id="clearFiltersBtn" type="button" hidden>Clear filters</button>
+      </section>
+
+      <!-- ============ TREE VIEW ============ -->
+      <section class="view" id="treeView" aria-label="Organization tree">
+        <div class="tree-viewport" id="treeViewport">
+          <div class="tree-scaler" id="treeScaler">
+            <ul class="orgtree" id="orgTree" role="tree" aria-label="KanvTech hierarchy"><!-- built by app.js --></ul>
+          </div>
+        </div>
+        <div class="empty-note" id="treeEmpty" hidden>No employees match your search or filters.</div>
+      </section>
+
+      <!-- ============ DIRECTORY VIEW ============ -->
+      <section class="view" id="directoryView" aria-label="Employee directory" hidden>
+        <div class="dir-actions">
+          <button class="btn btn-ghost" id="copyTableBtn" type="button">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            Copy for Excel
+          </button>
+          <button class="btn btn-ghost" id="csvBtn" type="button">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+            Download CSV
+          </button>
+          <span class="dir-actions-note">All employees · rows &amp; columns · pastes straight into Excel</span>
+        </div>
+        <div class="table-wrap">
+          <table class="dir-table" id="dirTable">
+            <thead>
+              <tr>
+                <th scope="col" data-sort="id" class="col-code">Code</th>
+                <th scope="col" data-sort="name">Employee Name</th>
+                <th scope="col" data-sort="headName">Reports To</th>
+                <th scope="col" data-sort="level" class="col-level">Level</th>
+                <th scope="col" data-sort="branchName">Branch Lead</th>
+                <th scope="col" data-sort="directReports" class="col-num">Direct Reports</th>
+                <th scope="col" data-sort="teamSize" class="col-num">Team Size</th>
+              </tr>
+            </thead>
+            <tbody id="dirBody"><!-- filled by app.js --></tbody>
+          </table>
+        </div>
+        <p class="table-count" id="dirCount"></p>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <p class="foot-brand"><span aria-hidden="true">K</span> KanvTech — Organization Chart</p>
+      <p id="footMeta">Data source: OrgChartFile.xls</p>
+      <p>Built with plain HTML, CSS &amp; JavaScript · No frameworks · No server required</p>
+    </footer>
+  </div><!-- /.app -->
+
+  <!-- ============ EMPLOYEE MODAL ============ -->
+  <div class="modal-overlay" id="empModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="empModalName">
+      <button class="modal-close" id="empModalClose" type="button" aria-label="Close dialog">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <header class="modal-head" id="empModalHead"><!-- filled --></header>
+      <dl class="detail-grid" id="empDetails"><!-- filled --></dl>
+      <section class="modal-section">
+        <h4>Reporting chain</h4>
+        <ol class="chain-list" id="empChain"></ol>
+      </section>
+      <section class="modal-section" id="empReportsSection">
+        <h4>Direct reports <span class="count-badge" id="empReportsCount">0</span></h4>
+        <ul class="reports-list" id="empReports"></ul>
+      </section>
+      <footer class="modal-actions">
+        <button class="btn btn-primary" id="printProfileBtn" type="button">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="7"/></svg>
+          Print Profile
+        </button>
+        <button class="btn btn-ghost" id="locateBtn" type="button">Locate in Chart</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT MODAL ============ -->
+  <div class="modal-overlay" id="aboutModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="aboutTitle">
+      <button class="modal-close" id="aboutModalClose" type="button" aria-label="Close dialog">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <header class="modal-head about-head">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <div>
+          <h3 id="aboutTitle" class="about-title">About this project</h3>
+          <p class="about-sub">KanvTech · Assignment submission</p>
+        </div>
+      </header>
+      <div class="about-body">
+        <p>An interactive organization chart built from the official employee list
+           (<code>OrgChartFile.xls</code>). It shows all <strong id="aboutTotal">125</strong> employees
+           across <strong id="aboutLevels">5</strong> reporting levels, from the organization head down
+           to every team member.</p>
+        <h4>How to use</h4>
+        <ol class="about-steps">
+          <li><strong>Org Chart</strong> — the full reporting tree. Press a <em>+N</em> badge to open or close a team.</li>
+          <li><strong>Click any employee</strong> — a profile opens with their details, reporting chain and direct reports.</li>
+          <li><strong>Print Profile</strong> — a print preview opens showing the exact sheet; press
+              <em>Send to Printer</em> and choose your physical printer — a real page comes out for filing.</li>
+          <li><strong>Search &amp; filters</strong> — find people by name or code; partial works (try “sum”
+              or “12”). Matches appear in a results list under the search bar <em>and</em> get highlighted,
+              expanded and centered in the tree.</li>
+          <li><strong>Print ▾</strong> — print the whole chart with every employee on a single
+              page (the tree wraps into clean columns so the names stay readable), the full
+              employee directory, or any single employee profile (search and pick the person).</li>
+          <li><strong>Copy the data</strong> — Directory tab → <em>Copy for Excel</em> puts all employees
+              on your clipboard as rows &amp; columns (paste straight into Excel), or press
+              <em>Download CSV</em> to get an Excel-ready file. <em>Print ▾ → Employee directory</em>
+              prints the complete data sheet — every employee, every column.</li>
+          <li><strong>Manage Data</strong> — add, edit or remove employees right in the browser, or
+              <em>Upload data file</em> to load an .xls / .csv / .json / data.js straight from the
+              computer — the dashboard updates instantly. Changes save as a draft that survives
+              refresh; <em>Export data.js</em> downloads the updated data file — replace
+              <code>js/data.js</code> and push to publish for everyone.</li>
+        </ol>
+        <h4>Under the hood</h4>
+        <p>Written in plain HTML, CSS and JavaScript — no frameworks and no backend server. The employee
+           data is embedded in <code>js/data.js</code>, so the site loads instantly on any static host and
+           also works offline from a local folder.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ PRINT PREVIEW · send-to-printer station ============ -->
+  <div class="modal-overlay" id="printPreview" hidden>
+    <div class="pv-modal" role="dialog" aria-modal="true" aria-labelledby="pvTitle">
+      <button class="modal-close pv-close" id="pvClose" type="button" aria-label="Close print preview">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <header class="pv-head">
+        <h3 id="pvTitle">Print Preview</h3>
+        <p class="pv-sub">This is exactly the sheet that will come out of the printer.</p>
+      </header>
+      <div class="pv-tip">
+        <strong>To print on real paper:</strong> press <strong>Send to Printer</strong> → in the dialog
+        that opens, set <strong>Destination</strong> to your physical printer (HP, Canon, Epson, office
+        network printer…) → click <strong>Print</strong>. The paper comes out of the printer.
+        “Save as PDF” is only the browser’s default destination — just switch it to your printer.
+      </div>
+      <div class="pv-stage">
+        <div class="pv-paper" id="pvPaper"><!-- profile sheet injected by app.js --></div>
+      </div>
+      <p class="pv-meta">A4 · Portrait · Employee profile sheet</p>
+      <footer class="pv-actions">
+        <button class="btn btn-ghost" id="pvCancelBtn" type="button">Cancel</button>
+        <button class="btn btn-primary" id="pvConfirmBtn" type="button">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="7"/></svg>
+          Send to Printer
+        </button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ============ PRINT PICKER · choose an employee to print ============ -->
+  <div class="modal-overlay" id="pickModal" hidden>
+    <div class="modal pick-modal" role="dialog" aria-modal="true" aria-labelledby="pickTitle">
+      <button class="modal-close" id="pickClose" type="button" aria-label="Close dialog">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <header class="pick-head">
+        <h3 id="pickTitle">Print an employee profile</h3>
+        <p class="pick-sub">Search by name or code — partial is fine (try “sum” or “12”).</p>
+      </header>
+      <div class="pick-search">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+        <input id="pickSearch" type="search" placeholder="Search name or code…" autocomplete="off" aria-label="Search employee to print">
+      </div>
+      <p class="pick-count" id="pickCount" aria-live="polite"></p>
+      <ul class="pick-list" id="pickList"><!-- filled by app.js --></ul>
+    </div>
+  </div>
+
+  <!-- ============ MANAGE DATA · manual update panel ============ -->
+  <div class="modal-overlay" id="adminModal" hidden>
+    <div class="modal admin-modal" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+      <button class="modal-close" id="adminClose" type="button" aria-label="Close dialog">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <header class="admin-head">
+        <div>
+          <h3 id="adminTitle">Manage Data</h3>
+          <p class="admin-sub">Add, edit or remove employees — or <strong>upload a data file</strong>
+             (.xlsx / .xls / .csv / .json / data.js) and the dashboard shows it instantly. Changes save as a
+             draft in this browser — export the data file to publish them for everyone.</p>
+        </div>
+        <span class="admin-status" id="adminStatus">Original data</span>
+      </header>
+      <div class="admin-toolbar">
+        <div class="pick-search admin-search">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+          <input id="adminSearch" type="search" placeholder="Find an employee…" autocomplete="off" aria-label="Find employee to edit">
+        </div>
+        <button class="btn btn-ghost" id="adminAddBtn" type="button">+ Add employee</button>
+        <button class="btn btn-ghost" id="adminUploadBtn" type="button">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V9m0 0 4 4m-4-4-4 4M4 7V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2"/></svg>
+          Upload data file
+        </button>
+        <input type="file" id="adminFileInput" accept=".js,.json,.csv,.tsv,.xls,.xlsx,.htm,.html,.txt" hidden>
+        <button class="btn btn-ghost" id="adminDiscardBtn" type="button" hidden>Discard draft</button>
+        <button class="btn btn-primary" id="adminJsonBtn" type="button">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+          Export data (JSON)
+        </button>
+      </div>
+      <div class="admin-grid">
+        <ul class="adm-list" id="adminList"><!-- filled by app.js --></ul>
+        <form class="adm-form" id="adminForm" autocomplete="off">
+          <p class="adm-form-title" id="admFormTitle">Add employee</p>
+          <label class="adm-field"><span>Employee code</span>
+            <input id="admCode" type="text" maxlength="12" placeholder="e.g. 126">
+          </label>
+          <label class="adm-field"><span>Full name</span>
+            <input id="admName" type="text" maxlength="60" placeholder="First Last">
+          </label>
+          <div class="adm-row">
+            <label class="adm-field"><span>Level</span>
+              <select id="admLevel">
+                <option value="2">Level 2</option>
+                <option value="3" selected>Level 3</option>
+                <option value="4">Level 4</option>
+                <option value="5">Level 5</option>
+              </select>
+            </label>
+            <label class="adm-field"><span>Reports to</span>
+              <select id="admHead"><option value="">— select —</option></select>
+            </label>
+          </div>
+          <label class="adm-field"><span>Branch</span>
+            <select id="admBranch"><option value="">Inherit from manager</option></select>
+          </label>
+          <p class="adm-hint" id="admHint" aria-live="polite"></p>
+          <div class="adm-actions">
+            <button class="btn btn-primary" id="admSaveBtn" type="submit">Save change</button>
+            <button class="btn btn-ghost" id="admDeleteBtn" type="button" hidden>Delete employee</button>
+            <button class="btn btn-ghost" id="admCancelBtn" type="button">Clear</button>
+          </div>
+        </form>
+      </div>
+      <p class="adm-note" id="adminNote"><strong>How upload works:</strong> employees whose code already exists are updated,
+        new codes are added — the tree, counters, search and directory refresh instantly, and everything is saved as a
+        draft in this browser (it survives a refresh; <em>Discard draft</em> undoes it). Supported files:
+        <strong>.xlsx</strong> (first sheet), .xls, .csv, .json — columns like
+        <em>Employee Code, Employee Name, Head Code / Head Employee, Level</em>.
+        <br><strong>To publish for everyone:</strong> <strong>Export data (JSON)</strong> → open the file in Notepad → on
+        GitHub edit <code>js/data.js</code> → replace everything with <code>const ORG_DATA =</code> + the JSON contents +
+        <code>;</code> → commit &amp; push. Netlify puts it live in ~30 seconds.</p>
+    </div>
+  </div>
+
+  <!-- hidden containers used only when printing -->
+  <div id="printProfile" aria-hidden="true"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

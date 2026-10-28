@@ -1,0 +1,3275 @@
+{
+  "meta": {
+    "company": "KanvTech",
+    "sourceFile": "OrgChartFile.xls",
+    "totalEmployees": 125,
+    "levels": 5,
+    "branches": 13,
+    "managers": 30,
+    "generated": "2026-10-27"
+  },
+  "branches": [
+    {
+      "id": "M01",
+      "name": "Sumit Jayantilal Gala",
+      "teamSize": 125
+    },
+    {
+      "id": "12",
+      "name": "Dipti V. Maral",
+      "teamSize": 70
+    },
+    {
+      "id": "347",
+      "name": "Pratik Janardan Patil",
+      "teamSize": 25
+    },
+    {
+      "id": "21",
+      "name": "Darshana Keval Padte",
+      "teamSize": 6
+    },
+    {
+      "id": "362",
+      "name": "Saurabh Janardan Karke",
+      "teamSize": 5
+    },
+    {
+      "id": "1",
+      "name": "Sonali S Ghanekar",
+      "teamSize": 4
+    },
+    {
+      "id": "7",
+      "name": "Lavita DSouza",
+      "teamSize": 4
+    },
+    {
+      "id": "23",
+      "name": "Pravin Ramchandra Ghaware",
+      "teamSize": 2
+    },
+    {
+      "id": "480",
+      "name": "Sonal Vijay Kelaskar",
+      "teamSize": 2
+    },
+    {
+      "id": "556",
+      "name": "Harshad Laherchand Nagda",
+      "teamSize": 2
+    },
+    {
+      "id": "19",
+      "name": "Prashant Yuvaraj Koshti",
+      "teamSize": 1
+    },
+    {
+      "id": "33",
+      "name": "Padmshree Ankush Bhanse",
+      "teamSize": 1
+    },
+    {
+      "id": "520",
+      "name": "Mahesh Ramesh Rane",
+      "teamSize": 1
+    },
+    {
+      "id": "565",
+      "name": "Aniket Krishna Kadam",
+      "teamSize": 1
+    }
+  ],
+  "employees": [
+    {
+      "id": "M01",
+      "name": "Sumit Jayantilal Gala",
+      "headId": "M01",
+      "headName": "Sumit Jayantilal Gala",
+      "level": 1,
+      "depth": 0,
+      "directReports": 13,
+      "teamSize": 124,
+      "branchId": "M01",
+      "branchName": "Sumit Jayantilal Gala",
+      "branchIdx": 0,
+      "chain": []
+    },
+    {
+      "id": "520",
+      "name": "Mahesh Ramesh Rane",
+      "headId": "M01",
+      "headName": "Sumit Jayantilal Gala",
+      "level": 2,
+      "depth": 1,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "520",
+      "branchName": "Mahesh Ramesh Rane",
+      "branchIdx": 12,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Sonali S Ghanekar",
+      "headId": "M01",
+      "headName": "Sumit Jayantilal Gala",
+      "level": 2,
+      "depth": 1,
+      "directReports": 3,
+      "teamSize": 3,
+      "branchId": "1",
+      "branchName": "Sonali S Ghanekar",
+      "branchIdx": 5,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Lavita DSouza",
+      "headId": "M01",
+      "headName": "Sumit Jayantilal Gala",
+      "level": 2,
+      "depth": 1,
+      "directReports": 3,
+      "teamSize": 3,
+      "branchId": "7",
+      "branchName": "Lavita DSouza",
+      "branchIdx": 6,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Dipti V. Maral",
+      "headId": "M01",
+      "headName": "Sumit Jayantilal Gala",
+      "level": 2,
+      "depth": 1,
+      "directReports": 8,
+      "teamSize": 69,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Prashant Yuvaraj Koshti",
+      "headId": "M01",
+      "headName": "Sumit Jayantilal Gala",
+      "level": 2,
+      "depth": 1,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "19",
+      "branchName": "Prashant Yuvaraj Koshti",
+      "branchIdx": 10,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "name": "Darshana Keval Padte",
+      "headId": "M01",
+      "headName": "Sumit Jayantilal Gala",
+      "level": 2,
+      "depth": 1,
+      "directReports": 3,
+      "teamSize": 5,
+      "branchId": "21",
+      "branchName": "Darshana Keval Padte",
+      "branchIdx": 3,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "name": "Pravin Ramchandra Ghaware",
+      "headId": "M01",
+      "headName": "Sumit Jayantilal Gala",
+      "level": 2,
+      "depth": 1,
+      "directReports": 1,
+      "teamSize": 1,
+      "branchId": "23",
+      "branchName": "Pravin Ramchandra Ghaware",
+      "branchIdx": 7,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        }
+      ]
+    },
+    {
+      "id": "556",
+      "name": "Harshad Laherchand Nagda",
+      "headId": "M01",
+      "headName": "Sumit Jayantilal Gala",
+      "level": 2,
+      "depth": 1,
+      "directReports": 1,
+      "teamSize": 1,
+      "branchId": "556",
+      "branchName": "Harshad Laherchand Nagda",
+      "branchIdx": 9,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        }
+      ]
+    },
+    {
+      "id": "565",
+      "name": "Aniket Krishna Kadam",
+      "headId": "M01",
+      "headName": "Sumit Jayantilal Gala",
+      "level": 2,
+      "depth": 1,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "565",
+      "branchName": "Aniket Krishna Kadam",
+      "branchIdx": 13,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "name": "Padmshree Ankush Bhanse",
+      "headId": "M01",
+      "headName": "Sumit Jayantilal Gala",
+      "level": 2,
+      "depth": 1,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "33",
+      "branchName": "Padmshree Ankush Bhanse",
+      "branchIdx": 11,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        }
+      ]
+    },
+    {
+      "id": "347",
+      "name": "Pratik Janardan Patil",
+      "headId": "M01",
+      "headName": "Sumit Jayantilal Gala",
+      "level": 2,
+      "depth": 1,
+      "directReports": 18,
+      "teamSize": 24,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        }
+      ]
+    },
+    {
+      "id": "362",
+      "name": "Saurabh Janardan Karke",
+      "headId": "M01",
+      "headName": "Sumit Jayantilal Gala",
+      "level": 2,
+      "depth": 1,
+      "directReports": 4,
+      "teamSize": 4,
+      "branchId": "362",
+      "branchName": "Saurabh Janardan Karke",
+      "branchIdx": 4,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        }
+      ]
+    },
+    {
+      "id": "480",
+      "name": "Sonal Vijay Kelaskar",
+      "headId": "M01",
+      "headName": "Sumit Jayantilal Gala",
+      "level": 2,
+      "depth": 1,
+      "directReports": 1,
+      "teamSize": 1,
+      "branchId": "480",
+      "branchName": "Sonal Vijay Kelaskar",
+      "branchIdx": 8,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        }
+      ]
+    },
+    {
+      "id": "751",
+      "name": "Rachana Sagar Matera",
+      "headId": "480",
+      "headName": "Sonal Vijay Kelaskar",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "480",
+      "branchName": "Sonal Vijay Kelaskar",
+      "branchIdx": 8,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "480",
+          "name": "Sonal Vijay Kelaskar"
+        }
+      ]
+    },
+    {
+      "id": "44",
+      "name": "Lakshmikant R Mishra",
+      "headId": "556",
+      "headName": "Harshad Laherchand Nagda",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "556",
+      "branchName": "Harshad Laherchand Nagda",
+      "branchIdx": 9,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "556",
+          "name": "Harshad Laherchand Nagda"
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "name": "Swara Pratik Patil",
+      "headId": "1",
+      "headName": "Sonali S Ghanekar",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "1",
+      "branchName": "Sonali S Ghanekar",
+      "branchIdx": 5,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "1",
+          "name": "Sonali S Ghanekar"
+        }
+      ]
+    },
+    {
+      "id": "302",
+      "name": "Yogesh Dilip Gaikwad",
+      "headId": "1",
+      "headName": "Sonali S Ghanekar",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "1",
+      "branchName": "Sonali S Ghanekar",
+      "branchIdx": 5,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "1",
+          "name": "Sonali S Ghanekar"
+        }
+      ]
+    },
+    {
+      "id": "627",
+      "name": "Rutuja Prakash Wagh",
+      "headId": "1",
+      "headName": "Sonali S Ghanekar",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "1",
+      "branchName": "Sonali S Ghanekar",
+      "branchIdx": 5,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "1",
+          "name": "Sonali S Ghanekar"
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Neeta V. Deshpande",
+      "headId": "7",
+      "headName": "Lavita DSouza",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "7",
+      "branchName": "Lavita DSouza",
+      "branchIdx": 6,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "7",
+          "name": "Lavita DSouza"
+        }
+      ]
+    },
+    {
+      "id": "395",
+      "name": "Pankaj Ramnarayan Yadav",
+      "headId": "7",
+      "headName": "Lavita DSouza",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "7",
+      "branchName": "Lavita DSouza",
+      "branchIdx": 6,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "7",
+          "name": "Lavita DSouza"
+        }
+      ]
+    },
+    {
+      "id": "410",
+      "name": "Trupti Vishal Chowdhary",
+      "headId": "7",
+      "headName": "Lavita DSouza",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "7",
+      "branchName": "Lavita DSouza",
+      "branchIdx": 6,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "7",
+          "name": "Lavita DSouza"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Vinod B More",
+      "headId": "12",
+      "headName": "Dipti V. Maral",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Veena Sagar Mavkar",
+      "headId": "12",
+      "headName": "Dipti V. Maral",
+      "level": 3,
+      "depth": 2,
+      "directReports": 7,
+      "teamSize": 7,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        }
+      ]
+    },
+    {
+      "id": "49",
+      "name": "Ravindra Shivaji Patil",
+      "headId": "12",
+      "headName": "Dipti V. Maral",
+      "level": 3,
+      "depth": 2,
+      "directReports": 6,
+      "teamSize": 6,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        }
+      ]
+    },
+    {
+      "id": "129",
+      "name": "Sanjiv R. Jadhav",
+      "headId": "12",
+      "headName": "Dipti V. Maral",
+      "level": 3,
+      "depth": 2,
+      "directReports": 6,
+      "teamSize": 25,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        }
+      ]
+    },
+    {
+      "id": "464",
+      "name": "Satish Janu Adkhale",
+      "headId": "12",
+      "headName": "Dipti V. Maral",
+      "level": 3,
+      "depth": 2,
+      "directReports": 4,
+      "teamSize": 4,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        }
+      ]
+    },
+    {
+      "id": "441",
+      "name": "Nitin Vishanji Shah",
+      "headId": "12",
+      "headName": "Dipti V. Maral",
+      "level": 3,
+      "depth": 2,
+      "directReports": 2,
+      "teamSize": 3,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        }
+      ]
+    },
+    {
+      "id": "351",
+      "name": "Vijay Ramawadh Gaud",
+      "headId": "12",
+      "headName": "Dipti V. Maral",
+      "level": 3,
+      "depth": 2,
+      "directReports": 10,
+      "teamSize": 15,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        }
+      ]
+    },
+    {
+      "id": "384",
+      "name": "Gaurav Gorakhnath Kashid",
+      "headId": "12",
+      "headName": "Dipti V. Maral",
+      "level": 3,
+      "depth": 2,
+      "directReports": 1,
+      "teamSize": 1,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Roshni Mangesh Satamkar",
+      "headId": "21",
+      "headName": "Darshana Keval Padte",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "21",
+      "branchName": "Darshana Keval Padte",
+      "branchIdx": 3,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "21",
+          "name": "Darshana Keval Padte"
+        }
+      ]
+    },
+    {
+      "id": "320",
+      "name": "Rahul Vinod Yadav",
+      "headId": "21",
+      "headName": "Darshana Keval Padte",
+      "level": 3,
+      "depth": 2,
+      "directReports": 2,
+      "teamSize": 2,
+      "branchId": "21",
+      "branchName": "Darshana Keval Padte",
+      "branchIdx": 3,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "21",
+          "name": "Darshana Keval Padte"
+        }
+      ]
+    },
+    {
+      "id": "523",
+      "name": "Atharva Sandeep Khare",
+      "headId": "21",
+      "headName": "Darshana Keval Padte",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "21",
+      "branchName": "Darshana Keval Padte",
+      "branchIdx": 3,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "21",
+          "name": "Darshana Keval Padte"
+        }
+      ]
+    },
+    {
+      "id": "373",
+      "name": "Siddesh Deepak Mane",
+      "headId": "23",
+      "headName": "Pravin Ramchandra Ghaware",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "23",
+      "branchName": "Pravin Ramchandra Ghaware",
+      "branchIdx": 7,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "23",
+          "name": "Pravin Ramchandra Ghaware"
+        }
+      ]
+    },
+    {
+      "id": "268",
+      "name": "Yogesh Lalchand Pawar",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 2,
+      "teamSize": 2,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "487",
+      "name": "Omkar Jitendra Narvankar",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "346",
+      "name": "Mayuri Prashant Deshpande",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 4,
+      "teamSize": 4,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "526",
+      "name": "Tejas Tukaram Salunkhe",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "539",
+      "name": "Komal Sunil Shinde",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "581",
+      "name": "Kiran Vishnu Salunkhe",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "628",
+      "name": "Saurabh Arun Shukla",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "632",
+      "name": "Sudrik Nilesh Dnyaneshwar",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "633",
+      "name": "Ashish Prajapati",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "668",
+      "name": "Abhishek Padmakar Sandhyan",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "851",
+      "name": "Santosh Uddhav Puri",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "761",
+      "name": "Roshan Chandrakant Nikam",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "585",
+      "name": "Pratham Chiman Kamble",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "587",
+      "name": "Akshay Suresh Khade",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "589",
+      "name": "Abhay Kumar",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "616",
+      "name": "Yadnyesh Dattatray Kharkar",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "615",
+      "name": "Abhijeet Sanjay Lokare",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "626",
+      "name": "Vishal Raghunath Mane",
+      "headId": "347",
+      "headName": "Pratik Janardan Patil",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "name": "Zaverchand Lalji Nagda",
+      "headId": "362",
+      "headName": "Saurabh Janardan Karke",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "362",
+      "branchName": "Saurabh Janardan Karke",
+      "branchIdx": 4,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "362",
+          "name": "Saurabh Janardan Karke"
+        }
+      ]
+    },
+    {
+      "id": "537",
+      "name": "Hemant Madhukar Thakare",
+      "headId": "362",
+      "headName": "Saurabh Janardan Karke",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "362",
+      "branchName": "Saurabh Janardan Karke",
+      "branchIdx": 4,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "362",
+          "name": "Saurabh Janardan Karke"
+        }
+      ]
+    },
+    {
+      "id": "547",
+      "name": "Hitesh Harish Parmar",
+      "headId": "362",
+      "headName": "Saurabh Janardan Karke",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "362",
+      "branchName": "Saurabh Janardan Karke",
+      "branchIdx": 4,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "362",
+          "name": "Saurabh Janardan Karke"
+        }
+      ]
+    },
+    {
+      "id": "602",
+      "name": "Manjali Bhagawatrao Gadge",
+      "headId": "362",
+      "headName": "Saurabh Janardan Karke",
+      "level": 3,
+      "depth": 2,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "362",
+      "branchName": "Saurabh Janardan Karke",
+      "branchIdx": 4,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "362",
+          "name": "Saurabh Janardan Karke"
+        }
+      ]
+    },
+    {
+      "id": "271",
+      "name": "Jayesh Harishchandra Farat",
+      "headId": "268",
+      "headName": "Yogesh Lalchand Pawar",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        },
+        {
+          "id": "268",
+          "name": "Yogesh Lalchand Pawar"
+        }
+      ]
+    },
+    {
+      "id": "407",
+      "name": "Kunal Krushna Gaikwad",
+      "headId": "268",
+      "headName": "Yogesh Lalchand Pawar",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        },
+        {
+          "id": "268",
+          "name": "Yogesh Lalchand Pawar"
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "name": "Supriya P. Memane",
+      "headId": "129",
+      "headName": "Sanjiv R. Jadhav",
+      "level": 4,
+      "depth": 3,
+      "directReports": 6,
+      "teamSize": 6,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "name": "Sherbahadur Gangaram Bhul",
+      "headId": "129",
+      "headName": "Sanjiv R. Jadhav",
+      "level": 4,
+      "depth": 3,
+      "directReports": 7,
+      "teamSize": 7,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        }
+      ]
+    },
+    {
+      "id": "127",
+      "name": "Mahendra Pundalik Sonawane",
+      "headId": "129",
+      "headName": "Sanjiv R. Jadhav",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        }
+      ]
+    },
+    {
+      "id": "275",
+      "name": "Sayali Ramesh Sonavale",
+      "headId": "129",
+      "headName": "Sanjiv R. Jadhav",
+      "level": 4,
+      "depth": 3,
+      "directReports": 2,
+      "teamSize": 2,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        }
+      ]
+    },
+    {
+      "id": "277",
+      "name": "Jayant Prakash Kshirsagar",
+      "headId": "129",
+      "headName": "Sanjiv R. Jadhav",
+      "level": 4,
+      "depth": 3,
+      "directReports": 3,
+      "teamSize": 3,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        }
+      ]
+    },
+    {
+      "id": "625",
+      "name": "Vinayak Ramesh Teli",
+      "headId": "129",
+      "headName": "Sanjiv R. Jadhav",
+      "level": 4,
+      "depth": 3,
+      "directReports": 1,
+      "teamSize": 1,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        }
+      ]
+    },
+    {
+      "id": "139",
+      "name": "Nitin Anil Warkari",
+      "headId": "49",
+      "headName": "Ravindra Shivaji Patil",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "49",
+          "name": "Ravindra Shivaji Patil"
+        }
+      ]
+    },
+    {
+      "id": "420",
+      "name": "Pravin Vishnu Shinde",
+      "headId": "49",
+      "headName": "Ravindra Shivaji Patil",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "49",
+          "name": "Ravindra Shivaji Patil"
+        }
+      ]
+    },
+    {
+      "id": "447",
+      "name": "Nageen Pawar",
+      "headId": "49",
+      "headName": "Ravindra Shivaji Patil",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "49",
+          "name": "Ravindra Shivaji Patil"
+        }
+      ]
+    },
+    {
+      "id": "503",
+      "name": "Maheswar Dixit",
+      "headId": "49",
+      "headName": "Ravindra Shivaji Patil",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "49",
+          "name": "Ravindra Shivaji Patil"
+        }
+      ]
+    },
+    {
+      "id": "534",
+      "name": "Harshal Manohar Dhuri",
+      "headId": "49",
+      "headName": "Ravindra Shivaji Patil",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "49",
+          "name": "Ravindra Shivaji Patil"
+        }
+      ]
+    },
+    {
+      "id": "533",
+      "name": "Abhishek Ravindranath Parab",
+      "headId": "49",
+      "headName": "Ravindra Shivaji Patil",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "49",
+          "name": "Ravindra Shivaji Patil"
+        }
+      ]
+    },
+    {
+      "id": "544",
+      "name": "Narendra Narayan Ranjane",
+      "headId": "464",
+      "headName": "Satish Janu Adkhale",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "464",
+          "name": "Satish Janu Adkhale"
+        }
+      ]
+    },
+    {
+      "id": "604",
+      "name": "Amey Suhas Sawant",
+      "headId": "464",
+      "headName": "Satish Janu Adkhale",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "464",
+          "name": "Satish Janu Adkhale"
+        }
+      ]
+    },
+    {
+      "id": "623",
+      "name": "Leon Jovio Vaidiakaran",
+      "headId": "464",
+      "headName": "Satish Janu Adkhale",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "464",
+          "name": "Satish Janu Adkhale"
+        }
+      ]
+    },
+    {
+      "id": "880",
+      "name": "Viral Kamlesh Panchal",
+      "headId": "464",
+      "headName": "Satish Janu Adkhale",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "464",
+          "name": "Satish Janu Adkhale"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Sangita Amol Bhandare",
+      "headId": "20",
+      "headName": "Veena Sagar Mavkar",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "20",
+          "name": "Veena Sagar Mavkar"
+        }
+      ]
+    },
+    {
+      "id": "278",
+      "name": "Sameer Ramchandra Telange",
+      "headId": "20",
+      "headName": "Veena Sagar Mavkar",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "20",
+          "name": "Veena Sagar Mavkar"
+        }
+      ]
+    },
+    {
+      "id": "542",
+      "name": "Kajal Balasaheb Shelar",
+      "headId": "20",
+      "headName": "Veena Sagar Mavkar",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "20",
+          "name": "Veena Sagar Mavkar"
+        }
+      ]
+    },
+    {
+      "id": "629",
+      "name": "Hemant Mallesh Dandem",
+      "headId": "20",
+      "headName": "Veena Sagar Mavkar",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "20",
+          "name": "Veena Sagar Mavkar"
+        }
+      ]
+    },
+    {
+      "id": "679",
+      "name": "Sakshi Rajesh Phulare",
+      "headId": "20",
+      "headName": "Veena Sagar Mavkar",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "20",
+          "name": "Veena Sagar Mavkar"
+        }
+      ]
+    },
+    {
+      "id": "856",
+      "name": "Baby Jagdish Gupta",
+      "headId": "20",
+      "headName": "Veena Sagar Mavkar",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "20",
+          "name": "Veena Sagar Mavkar"
+        }
+      ]
+    },
+    {
+      "id": "858",
+      "name": "Ashish Jacob Mohite",
+      "headId": "20",
+      "headName": "Veena Sagar Mavkar",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "20",
+          "name": "Veena Sagar Mavkar"
+        }
+      ]
+    },
+    {
+      "id": "458",
+      "name": "Thakur Rahul Gopal",
+      "headId": "441",
+      "headName": "Nitin Vishanji Shah",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "441",
+          "name": "Nitin Vishanji Shah"
+        }
+      ]
+    },
+    {
+      "id": "430",
+      "name": "Vaibhav Vijay Mhase",
+      "headId": "441",
+      "headName": "Nitin Vishanji Shah",
+      "level": 4,
+      "depth": 3,
+      "directReports": 1,
+      "teamSize": 1,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "441",
+          "name": "Nitin Vishanji Shah"
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "name": "C. S. Kumar",
+      "headId": "320",
+      "headName": "Rahul Vinod Yadav",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "21",
+      "branchName": "Darshana Keval Padte",
+      "branchIdx": 3,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "21",
+          "name": "Darshana Keval Padte"
+        },
+        {
+          "id": "320",
+          "name": "Rahul Vinod Yadav"
+        }
+      ]
+    },
+    {
+      "id": "620",
+      "name": "Bara Sanghamitra .",
+      "headId": "320",
+      "headName": "Rahul Vinod Yadav",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "21",
+      "branchName": "Darshana Keval Padte",
+      "branchIdx": 3,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "21",
+          "name": "Darshana Keval Padte"
+        },
+        {
+          "id": "320",
+          "name": "Rahul Vinod Yadav"
+        }
+      ]
+    },
+    {
+      "id": "488",
+      "name": "Santosh Hari Krishna Nayak",
+      "headId": "346",
+      "headName": "Mayuri Prashant Deshpande",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        },
+        {
+          "id": "346",
+          "name": "Mayuri Prashant Deshpande"
+        }
+      ]
+    },
+    {
+      "id": "552",
+      "name": "Vaibhav Raju Sonawane",
+      "headId": "346",
+      "headName": "Mayuri Prashant Deshpande",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        },
+        {
+          "id": "346",
+          "name": "Mayuri Prashant Deshpande"
+        }
+      ]
+    },
+    {
+      "id": "195",
+      "name": "Tarmale Kaluram Ramakant",
+      "headId": "346",
+      "headName": "Mayuri Prashant Deshpande",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        },
+        {
+          "id": "346",
+          "name": "Mayuri Prashant Deshpande"
+        }
+      ]
+    },
+    {
+      "id": "562",
+      "name": "Mahesh Daulat Kondar",
+      "headId": "346",
+      "headName": "Mayuri Prashant Deshpande",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "347",
+      "branchName": "Pratik Janardan Patil",
+      "branchIdx": 2,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "347",
+          "name": "Pratik Janardan Patil"
+        },
+        {
+          "id": "346",
+          "name": "Mayuri Prashant Deshpande"
+        }
+      ]
+    },
+    {
+      "id": "98",
+      "name": "Vishal V. Golatkar",
+      "headId": "351",
+      "headName": "Vijay Ramawadh Gaud",
+      "level": 4,
+      "depth": 3,
+      "directReports": 1,
+      "teamSize": 1,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        }
+      ]
+    },
+    {
+      "id": "126",
+      "name": "Rajendra Gulabchand Pardeshi",
+      "headId": "351",
+      "headName": "Vijay Ramawadh Gaud",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        }
+      ]
+    },
+    {
+      "id": "143",
+      "name": "Mayur Choudhary",
+      "headId": "351",
+      "headName": "Vijay Ramawadh Gaud",
+      "level": 4,
+      "depth": 3,
+      "directReports": 2,
+      "teamSize": 2,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        }
+      ]
+    },
+    {
+      "id": "309",
+      "name": "Murugan Ramu Swamy",
+      "headId": "351",
+      "headName": "Vijay Ramawadh Gaud",
+      "level": 4,
+      "depth": 3,
+      "directReports": 1,
+      "teamSize": 1,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        }
+      ]
+    },
+    {
+      "id": "258",
+      "name": "Vinod Sudhakar Jogdand",
+      "headId": "351",
+      "headName": "Vijay Ramawadh Gaud",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        }
+      ]
+    },
+    {
+      "id": "425",
+      "name": "Tanmay Milind Borkar",
+      "headId": "351",
+      "headName": "Vijay Ramawadh Gaud",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        }
+      ]
+    },
+    {
+      "id": "713",
+      "name": "Sailee Nitin Acharekar",
+      "headId": "351",
+      "headName": "Vijay Ramawadh Gaud",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        }
+      ]
+    },
+    {
+      "id": "573",
+      "name": "Shivam Shashikant Pawar",
+      "headId": "351",
+      "headName": "Vijay Ramawadh Gaud",
+      "level": 4,
+      "depth": 3,
+      "directReports": 1,
+      "teamSize": 1,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        }
+      ]
+    },
+    {
+      "id": "558",
+      "name": "Ajaykumar Rameshchandra Yadav",
+      "headId": "351",
+      "headName": "Vijay Ramawadh Gaud",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        }
+      ]
+    },
+    {
+      "id": "588",
+      "name": "Navnit Sopan Suryawanshi",
+      "headId": "351",
+      "headName": "Vijay Ramawadh Gaud",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        }
+      ]
+    },
+    {
+      "id": "461",
+      "name": "Jitendra Vasudev Konkar",
+      "headId": "384",
+      "headName": "Gaurav Gorakhnath Kashid",
+      "level": 4,
+      "depth": 3,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "384",
+          "name": "Gaurav Gorakhnath Kashid"
+        }
+      ]
+    },
+    {
+      "id": "196",
+      "name": "Haribhau Balu Shekte",
+      "headId": "430",
+      "headName": "Vaibhav Vijay Mhase",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "441",
+          "name": "Nitin Vishanji Shah"
+        },
+        {
+          "id": "430",
+          "name": "Vaibhav Vijay Mhase"
+        }
+      ]
+    },
+    {
+      "id": "429",
+      "name": "Mahesh Anil Warkari",
+      "headId": "573",
+      "headName": "Shivam Shashikant Pawar",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        },
+        {
+          "id": "573",
+          "name": "Shivam Shashikant Pawar"
+        }
+      ]
+    },
+    {
+      "id": "130",
+      "name": "Ravindra Mathura Nayak",
+      "headId": "625",
+      "headName": "Vinayak Ramesh Teli",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "625",
+          "name": "Vinayak Ramesh Teli"
+        }
+      ]
+    },
+    {
+      "id": "322",
+      "name": "Sandesh Sattyawan Padwal",
+      "headId": "35",
+      "headName": "Supriya P. Memane",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "35",
+          "name": "Supriya P. Memane"
+        }
+      ]
+    },
+    {
+      "id": "491",
+      "name": "Vipul Gopichand Nalawade",
+      "headId": "35",
+      "headName": "Supriya P. Memane",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "35",
+          "name": "Supriya P. Memane"
+        }
+      ]
+    },
+    {
+      "id": "497",
+      "name": "Abhishek Ashok Sawant",
+      "headId": "35",
+      "headName": "Supriya P. Memane",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "35",
+          "name": "Supriya P. Memane"
+        }
+      ]
+    },
+    {
+      "id": "393",
+      "name": "Akshay Vilas Ghule",
+      "headId": "35",
+      "headName": "Supriya P. Memane",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "35",
+          "name": "Supriya P. Memane"
+        }
+      ]
+    },
+    {
+      "id": "434",
+      "name": "Samruddhi Santosh Kedari",
+      "headId": "35",
+      "headName": "Supriya P. Memane",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "35",
+          "name": "Supriya P. Memane"
+        }
+      ]
+    },
+    {
+      "id": "617",
+      "name": "Aarti Anil Parulekar",
+      "headId": "35",
+      "headName": "Supriya P. Memane",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "35",
+          "name": "Supriya P. Memane"
+        }
+      ]
+    },
+    {
+      "id": "43",
+      "name": "Sunil Ramrao Kothalkar",
+      "headId": "38",
+      "headName": "Sherbahadur Gangaram Bhul",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "38",
+          "name": "Sherbahadur Gangaram Bhul"
+        }
+      ]
+    },
+    {
+      "id": "260",
+      "name": "Deepak Dinesh Shukla",
+      "headId": "38",
+      "headName": "Sherbahadur Gangaram Bhul",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "38",
+          "name": "Sherbahadur Gangaram Bhul"
+        }
+      ]
+    },
+    {
+      "id": "474",
+      "name": "Mandar Avinash Kolhe",
+      "headId": "38",
+      "headName": "Sherbahadur Gangaram Bhul",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "38",
+          "name": "Sherbahadur Gangaram Bhul"
+        }
+      ]
+    },
+    {
+      "id": "394",
+      "name": "Jayendra Dattaram Vedre",
+      "headId": "38",
+      "headName": "Sherbahadur Gangaram Bhul",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "38",
+          "name": "Sherbahadur Gangaram Bhul"
+        }
+      ]
+    },
+    {
+      "id": "413",
+      "name": "Santosh Harishchandra Sawant",
+      "headId": "38",
+      "headName": "Sherbahadur Gangaram Bhul",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "38",
+          "name": "Sherbahadur Gangaram Bhul"
+        }
+      ]
+    },
+    {
+      "id": "603",
+      "name": "Pooja Anil Gupta",
+      "headId": "38",
+      "headName": "Sherbahadur Gangaram Bhul",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "38",
+          "name": "Sherbahadur Gangaram Bhul"
+        }
+      ]
+    },
+    {
+      "id": "517",
+      "name": "Chandrakant Bajirao Kale",
+      "headId": "38",
+      "headName": "Sherbahadur Gangaram Bhul",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "38",
+          "name": "Sherbahadur Gangaram Bhul"
+        }
+      ]
+    },
+    {
+      "id": "555",
+      "name": "Ganesh Vikas Gound",
+      "headId": "98",
+      "headName": "Vishal V. Golatkar",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        },
+        {
+          "id": "98",
+          "name": "Vishal V. Golatkar"
+        }
+      ]
+    },
+    {
+      "id": "148",
+      "name": "Nidhi Nilesh Gurav",
+      "headId": "143",
+      "headName": "Mayur Choudhary",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        },
+        {
+          "id": "143",
+          "name": "Mayur Choudhary"
+        }
+      ]
+    },
+    {
+      "id": "554",
+      "name": "Vaibhav Bhagwat Patil",
+      "headId": "143",
+      "headName": "Mayur Choudhary",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        },
+        {
+          "id": "143",
+          "name": "Mayur Choudhary"
+        }
+      ]
+    },
+    {
+      "id": "418",
+      "name": "Pranay Ganesh Dalvi",
+      "headId": "309",
+      "headName": "Murugan Ramu Swamy",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "351",
+          "name": "Vijay Ramawadh Gaud"
+        },
+        {
+          "id": "309",
+          "name": "Murugan Ramu Swamy"
+        }
+      ]
+    },
+    {
+      "id": "415",
+      "name": "Pranav Prashant Patil",
+      "headId": "275",
+      "headName": "Sayali Ramesh Sonavale",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "275",
+          "name": "Sayali Ramesh Sonavale"
+        }
+      ]
+    },
+    {
+      "id": "518",
+      "name": "Prashant Shrawankumar Meena",
+      "headId": "275",
+      "headName": "Sayali Ramesh Sonavale",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "275",
+          "name": "Sayali Ramesh Sonavale"
+        }
+      ]
+    },
+    {
+      "id": "563",
+      "name": "Akash Arun Salavi",
+      "headId": "277",
+      "headName": "Jayant Prakash Kshirsagar",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "277",
+          "name": "Jayant Prakash Kshirsagar"
+        }
+      ]
+    },
+    {
+      "id": "608",
+      "name": "Madhur Sudesh Nakharekar",
+      "headId": "277",
+      "headName": "Jayant Prakash Kshirsagar",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "277",
+          "name": "Jayant Prakash Kshirsagar"
+        }
+      ]
+    },
+    {
+      "id": "621",
+      "name": "Yogesh Vasant Sathe",
+      "headId": "277",
+      "headName": "Jayant Prakash Kshirsagar",
+      "level": 5,
+      "depth": 4,
+      "directReports": 0,
+      "teamSize": 0,
+      "branchId": "12",
+      "branchName": "Dipti V. Maral",
+      "branchIdx": 1,
+      "chain": [
+        {
+          "id": "M01",
+          "name": "Sumit Jayantilal Gala"
+        },
+        {
+          "id": "12",
+          "name": "Dipti V. Maral"
+        },
+        {
+          "id": "129",
+          "name": "Sanjiv R. Jadhav"
+        },
+        {
+          "id": "277",
+          "name": "Jayant Prakash Kshirsagar"
+        }
+      ]
+    }
+  ]
+}
